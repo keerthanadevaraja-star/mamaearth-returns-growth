@@ -1,0 +1,8 @@
+Situation:
+Across the analysed window, Mamaearth booked a cleaned total revenue of INR 97,358.30. This figure is INR 2,501.90 lower than the raw INR 99,860.20 reported upstream, because five exact-duplicate orders (a double-submit bug) were removed during cleaning. The cleaned number is the one ops and finance should plan against.
+
+Complication:
+Returns are concentrated, not uniform. Cash-on-Delivery (COD) orders are returned at 44.4% - roughly three times the CARD rate of 14.7% and well above UPI's 18.9%. The risk sharpens further when we segment: the single highest-risk segment is COD orders in Tier-2 cities, which are returned at 54.5%. A single blended rate hides where the margin leak actually sits.
+
+Resolution:
+Timing matters too. 2026-01 appeared to be the peak month at INR 29,582.10, but that lead was an artifact of two bulk outlier orders; corrected, the month is only INR 11,637.10. The genuine peak is 2026-03 (March) at INR 20,318.90. Recommended actions: tighten COD eligibility and add prepaid incentives in Tier-2 cities, add a double-submit guard at checkout, and plan inventory and campaigns around the true March peak rather than the inflated January figure.
